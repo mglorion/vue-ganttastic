@@ -7,7 +7,7 @@
     </slot>
     <div class="g-label-column-rows">
       <div
-        v-for="({ label }, index) in getChartRows()"
+        v-for="({ label, bars }, index) in getChartRows()"
         :key="`${label}_${index}`"
         class="g-label-column-row"
         :style="{
@@ -15,7 +15,7 @@
           height: `${rowHeight}px`
         }"
       >
-        <slot name="label-column-row" :label="label">
+        <slot name="label-column-row" :label="label" :bars="bars">
           <span>{{ label }}</span>
         </slot>
       </div>

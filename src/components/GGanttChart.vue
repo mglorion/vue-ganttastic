@@ -10,8 +10,8 @@
         <template #label-column-title>
           <slot name="label-column-title" />
         </template>
-        <template #label-column-row="{ label }">
-          <slot name="label-column-row" :label="label" />
+        <template #label-column-row="{ label, bars }">
+          <slot name="label-column-row" :label="label" :bars="bars" />
         </template>
       </g-gantt-label-column>
       <div
