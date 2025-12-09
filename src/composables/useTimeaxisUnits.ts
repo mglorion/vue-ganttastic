@@ -39,7 +39,7 @@ export default function useTimeaxisUnits() {
     hour: "HH",
     date: "DD.MMM",
     day: "DD.MMM",
-    week: "WW",
+    week: "SWW",
     month: "MMMM YYYY",
     year: "YYYY"
   }
